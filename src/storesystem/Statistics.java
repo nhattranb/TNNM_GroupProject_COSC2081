@@ -13,22 +13,23 @@
 
 package storesystem;
 
-public class Order {
-    private String orderID;
-    private String orderDate;
-    private String orderStatus;
+public class Statistics {
     private double totalSpending;
+    private String mostPopular;
 
-    public Order() {
-
+    public double getTotalSpending() {
+        return totalSpending;
     }
 
-    public orderStatus (String orderStatus) {
-
+    public void setTotalSpending(double totalSpending) {
+        this.totalSpending = totalSpending;
     }
 
-    public getOrder(String orderID, String orderDate) {
-        this.orderID = orderID;
-        this.orderDate = orderDate;
+    public String getMostPopular() {
+        return mostPopular;
+    }
+
+    public void setMostPopular(String mostPopular) {
+        this.mostPopular = mostPopular;
     }
 }

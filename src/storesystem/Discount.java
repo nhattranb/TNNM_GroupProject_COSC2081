@@ -13,22 +13,14 @@
 
 package storesystem;
 
-public class Order {
-    private String orderID;
-    private String orderDate;
-    private String orderStatus;
-    private double totalSpending;
+public class Discount {
+    private int Total;
 
-    public Order() {
-
+    public int getTotal() {
+        return Total;
     }
 
-    public orderStatus (String orderStatus) {
-
-    }
-
-    public getOrder(String orderID, String orderDate) {
-        this.orderID = orderID;
-        this.orderDate = orderDate;
+    public void setTotal(int total) {
+        Total = total;
     }
 }
