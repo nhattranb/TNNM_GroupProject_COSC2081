@@ -39,12 +39,21 @@ public class Customer {
         this.fullName = fullName;
     }
 
-    public int getAllOrder() {
+    public checkMembership (String customerID) {
 
     }
 
-    public checkMembership (String customerID) {
-
+    @Override
+    public String toString() {
+        return "The Customer information are as follow{" +
+                "username='" + username + '\'' +
+                ", fullName='" + fullName + '\'' +
+                ", password='" + password + '\'' +
+                ", phoneNumber='" + phoneNumber + '\'' +
+                ", address='" + address + '\'' +
+                ", customerID='" + customerID + '\'' +
+                ", customerType='" + customerType + '\'' +
+                '}';
     }
 
     public allProduct() {

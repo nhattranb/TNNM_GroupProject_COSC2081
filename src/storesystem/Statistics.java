@@ -17,7 +17,7 @@ public class Statistics {
     private double totalSpending;
     private String mostPopular;
 
-    public double getTotalSpending() {
+    public double getSpending() {
         return totalSpending;
     }
 

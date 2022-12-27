@@ -4,9 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="3e1174cf-2abd-44d5-886e-f218a59435f7" name="Changes" comment="Project skeleton update">
+    <list default="true" id="3e1174cf-2abd-44d5-886e-f218a59435f7" name="Changes" comment="quick changes">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/storesystem/Admin.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/storesystem/Admin.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/storesystem/Customer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/storesystem/Customer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/storesystem/Statistics.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/storesystem/Statistics.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -58,7 +59,7 @@
       <workItem from="1671798853030" duration="2799000" />
       <workItem from="1671962837427" duration="894000" />
       <workItem from="1672061525330" duration="1507000" />
-      <workItem from="1672109878782" duration="4151000" />
+      <workItem from="1672109878782" duration="6198000" />
     </task>
     <task id="LOCAL-00001" summary="The first code commit for the project">
       <created>1671799844112</created>
@@ -88,7 +89,14 @@
       <option name="project" value="LOCAL" />
       <updated>1672113266338</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="quick changes">
+      <created>1672114385460</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1672114385460</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -110,6 +118,7 @@
     <MESSAGE value="The 2nd commit with changes regarding code presentation..." />
     <MESSAGE value="Fully updated the project... (26/12/2022)" />
     <MESSAGE value="Project skeleton update" />
-    <option name="LAST_COMMIT_MESSAGE" value="Project skeleton update" />
+    <MESSAGE value="quick changes" />
+    <option name="LAST_COMMIT_MESSAGE" value="quick changes" />
   </component>
 </project>
