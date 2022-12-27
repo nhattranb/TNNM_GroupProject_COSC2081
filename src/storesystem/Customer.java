@@ -42,4 +42,12 @@ public class Customer {
     public int getAllOrder() {
 
     }
+
+    public checkMembership (String customerID) {
+
+    }
+
+    public allProduct() {
+
+    }
 }
