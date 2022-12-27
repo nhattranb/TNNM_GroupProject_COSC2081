@@ -23,7 +23,7 @@ public class Admin {
     }
 
     public void setRevenue(int revenue) {
-        Revenue = revenue;
+        this.Revenue = revenue;
     }
 
     public String getMembership() {
@@ -31,6 +31,6 @@ public class Admin {
     }
 
     public void setMembership(String membership) {
-        Membership = membership;
+        this.Membership = membership;
     }
 }

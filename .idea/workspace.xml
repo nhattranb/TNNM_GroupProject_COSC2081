@@ -4,8 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="3e1174cf-2abd-44d5-886e-f218a59435f7" name="Changes" comment="Fully updated the project... (26/12/2022)">
+    <list default="true" id="3e1174cf-2abd-44d5-886e-f218a59435f7" name="Changes" comment="Project skeleton update">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/storesystem/Admin.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/storesystem/Admin.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -57,7 +58,7 @@
       <workItem from="1671798853030" duration="2799000" />
       <workItem from="1671962837427" duration="894000" />
       <workItem from="1672061525330" duration="1507000" />
-      <workItem from="1672109878782" duration="2918000" />
+      <workItem from="1672109878782" duration="4151000" />
     </task>
     <task id="LOCAL-00001" summary="The first code commit for the project">
       <created>1671799844112</created>
@@ -80,7 +81,14 @@
       <option name="project" value="LOCAL" />
       <updated>1672061977685</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="Project skeleton update">
+      <created>1672113266338</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1672113266338</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -101,6 +109,7 @@
     <MESSAGE value="The first code commit for the project" />
     <MESSAGE value="The 2nd commit with changes regarding code presentation..." />
     <MESSAGE value="Fully updated the project... (26/12/2022)" />
-    <option name="LAST_COMMIT_MESSAGE" value="Fully updated the project... (26/12/2022)" />
+    <MESSAGE value="Project skeleton update" />
+    <option name="LAST_COMMIT_MESSAGE" value="Project skeleton update" />
   </component>
 </project>
