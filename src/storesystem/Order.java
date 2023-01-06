@@ -23,12 +23,4 @@ public class Order {
 
     }
 
-    public orderStatus (String orderStatus) {
-
-    }
-
-    public getOrder(String orderID, String orderDate) {
-        this.orderID = orderID;
-        this.orderDate = orderDate;
-    }
 }
