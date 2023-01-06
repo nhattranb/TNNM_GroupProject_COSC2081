@@ -401,8 +401,8 @@ public class Admin {
     }
     public void removeCustomer() {
         try {
-            File oldFile = new File("src/customers.txt");
-            File tempFile = new File("src/customersTemp.txt");   // create a temporary text file to store new data
+            File oldFile = new File("src/storesystem/customers.txt");
+            File tempFile = new File("src/storesystem/customersTemp.txt");   // create a temporary text file to store new data
             PrintWriter pw = new PrintWriter(tempFile);   // write into the temporary file
             Scanner fileScanner = new Scanner(oldFile);
             String line;
