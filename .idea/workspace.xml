@@ -4,10 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="3e1174cf-2abd-44d5-886e-f218a59435f7" name="Changes" comment="quick changes">
+    <list default="true" id="3e1174cf-2abd-44d5-886e-f218a59435f7" name="Changes" comment="Update registration and login for Customer.java, other functions are still in process.">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/storesystem/Customer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/storesystem/Customer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/storesystem/Statistics.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/storesystem/Statistics.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -45,9 +44,30 @@
     &quot;project.structure.last.edited&quot;: &quot;Project&quot;,
     &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
     &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.lookFeel&quot;
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.lookFeel&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
 }</component>
+  <component name="RunManager">
+    <configuration name="Customer" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="storesystem.Customer" />
+      <module name="groupproject" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="storesystem.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.Customer" />
+      </list>
+    </recent_temporary>
+  </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
@@ -60,6 +80,13 @@
       <workItem from="1671962837427" duration="894000" />
       <workItem from="1672061525330" duration="1507000" />
       <workItem from="1672109878782" duration="6198000" />
+      <workItem from="1672390740046" duration="415000" />
+      <workItem from="1672738662031" duration="2121000" />
+      <workItem from="1672756677573" duration="5464000" />
+      <workItem from="1672806728300" duration="770000" />
+      <workItem from="1672836307328" duration="1591000" />
+      <workItem from="1672894653780" duration="1228000" />
+      <workItem from="1672979952091" duration="433000" />
     </task>
     <task id="LOCAL-00001" summary="The first code commit for the project">
       <created>1671799844112</created>
@@ -96,7 +123,14 @@
       <option name="project" value="LOCAL" />
       <updated>1672114385460</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="Update registration and login for Customer.java, other functions are still in process.">
+      <created>1672391123052</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1672391123052</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -119,6 +153,7 @@
     <MESSAGE value="Fully updated the project... (26/12/2022)" />
     <MESSAGE value="Project skeleton update" />
     <MESSAGE value="quick changes" />
-    <option name="LAST_COMMIT_MESSAGE" value="quick changes" />
+    <MESSAGE value="Update registration and login for Customer.java, other functions are still in process." />
+    <option name="LAST_COMMIT_MESSAGE" value="Update registration and login for Customer.java, other functions are still in process." />
   </component>
 </project>
