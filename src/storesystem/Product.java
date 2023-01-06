@@ -29,13 +29,13 @@ public class Product {
     public Product(String productName, double productPrice, String productCategory) throws IOException {
         try (Scanner fileScanner = new Scanner(new File("src/storesystem/product.txt"))) {
             while (fileScanner.hasNext()) {
-                String line = fileScanner.next();
+                String line = fileScanner.next(); // get the line int the text file
                 while (!fileScanner.hasNext()) {
-                    String lastLine = line;
-                    String[] values = lastLine.split(",");
-                    String[] part = values[0].split("(?<=\\D)(?=\\d)");
-                    int number = Integer.parseInt(part[1]);
-                    this.productID = "PRO" + ++number;
+                    String lastLine = line;     // retrieve the last line
+                    String[] values = lastLine.split(",");      // split the String line by ',' and store all values in an array
+                    String[] part = values[0].split("(?<=\\D)(?=\\d)");     // take the first value of the array, separate alphabet and number
+                    int number = Integer.parseInt(part[1]);     // convert the String number into number
+                    this.productID = "PRO" + ++number;      // construct ID
                     break;
                 } // need to create a method to write new info to the txt file
             }
