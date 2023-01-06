@@ -13,18 +13,50 @@
 
 package storesystem;
 
+import java.io.Serializable;
+import java.util.ArrayList;
+import java.util.List;
+
 public class Order {
     private String orderID;
     private String orderDate;
     private String orderStatus;
-    private double totalSpending;
+    private String customerID;
+    private String customerName;
+
+    public String getOrderHistoryID() {
+        return orderHistoryID;
+    }
+
+    public void setOrderHistoryID(String orderHistoryID) {
+        this.orderHistoryID = orderHistoryID;
+    }
+
+    private String orderHistoryID;
+
+
+    public double getnumberOfAllOrders() {
+        return numberOfAllOrders;
+    }
+
+    public void setnumberOfAllOrders(double numberOfAllOrders) {
+        this.numberOfAllOrders = numberOfAllOrders;
+    }
+
+    private double numberOfAllOrders;
+
+    public void numberOfAllOrders (double numberOfAllOrders) {
+        return (getOrderHistoryID());
+    }
 
     public Order() {
-
+        this.orderID = orderID;
+        this.orderStatus = orderStatus;
     }
 
     public orderStatus (String orderStatus) {
-
+        System.out.println("your order has been set...");
+        String orderStatus = "PAID";
     }
 
     public getOrder(String orderID, String orderDate) {
