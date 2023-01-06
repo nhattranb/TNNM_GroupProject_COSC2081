@@ -13,29 +13,47 @@
 
 package storesystem;
 
+import java.io.File;
+import java.io.IOException;
+import java.util.Scanner;
+import java.util.concurrent.atomic.AtomicInteger;
+
 public class Product {
     private String productID;
-    private String productTitle;
+    private String productName; // unique and cannot be modified after initialization -> no setter method
+    private double productPrice;
+    private String productCategory = "None";
+    private static int counter = 0;  // count every product object created to create unique ID
+    private String currency = "VND";
 
-    public String getProductPrice() {
-        return productPrice;
-    }
-
-    public void setProductPrice(String productPrice) {
-        this.productPrice = productPrice;
-    }
-
-    private String productPrice;
-    private String productCategory;
-
-    public Product (String username, String password, String productID, String productTitle) {
-        this.productID = productID;
-        this.productTitle = productTitle;
+    public Product(String productName, double productPrice, String productCategory) throws IOException {
+        try (Scanner fileScanner = new Scanner(new File("src/storesystem/product.txt"))) {
+            while (fileScanner.hasNext()) {
+                String line = fileScanner.next();
+                while (!fileScanner.hasNext()) {
+                    String lastLine = line;
+                    String[] values = lastLine.split(",");
+                    String[] part = values[0].split("(?<=\\D)(?=\\d)");
+                    int number = Integer.parseInt(part[1]);
+                    this.productID = "PRO" + ++number;
+                    break;
+                } // need to create a method to write new info to the txt file
+            }
+        } catch (IOException e) {}
+        this.productName = productName;
         this.productPrice = productPrice;
         this.productCategory = productCategory;
+        this.currency = currency;
     }
 
-    public String getProductID() {
-        return productID;
+    @Override
+    public String toString() {
+        return "Product{" +
+                "productID='" + productID + '\'' +
+                ", productName='" + productName + '\'' +
+                ", productPrice=" + productPrice +
+                ", productCategory='" + productCategory + '\'' +
+                ", currency='" + currency + '\'' +
+                '}';
     }
 }
