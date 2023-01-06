@@ -22,47 +22,30 @@ public class Customer {
     private String email;
     private String address;
     private String customerID;
-    private static int counter = 1;
+    // private static int counter = 1;
     private String customerType;
 
-    public static void main(String[] args) throws IOException {
-        Scanner sc = new Scanner(System.in);
-        System.out.println("Hello! Do you already have an account? (yes/no)");
-        String isMember = sc.nextLine();
 
-        if (isMember.equals("no")){
-            System.out.println("Welcome! Please enter your: username, password, full name, phone number, email, address");
-            String username = sc.nextLine();
-            String password = sc.nextLine();
-            String fullName = sc.nextLine();
-            String phoneNumber = sc.nextLine();
-            String email = sc.nextLine();
-            String address = sc.nextLine();
-            Customer regisUser = new Customer(username,password,fullName,phoneNumber,email,address);
-        }
-        System.out.println("Please enter your username and password to login:");
-        String userName = sc.nextLine();
-        String pass = sc.nextLine();
-        Customer loginUser = new Customer(userName, pass);
-
-        // after logging in, let the user choose what they want to do
-        loginUser.showFunctionsMenu();
-        int chosenNum = sc.nextInt();
-        while (chosenNum != 0){   // if not exit
-            if (chosenNum == 1){
-                loginUser.updateInformation();
-            } else if (chosenNum ==2) {
-                System.out.println();
-            }
-            loginUser.showFunctionsMenu();
-            chosenNum = sc.nextInt();   //keep updating the chosen function
-        }
-        System.out.println("Goodbye!");
-    }
     public Customer(String username, String password, String fullName, String phoneNumber,
                     String email, String address) throws IOException {
-        Customer.counter++;
-        this.customerID = "C00" + counter;
+        // generate a unique random ID for each customer
+        int pickRandom = (int) (Math.random()*9000)+1000;
+        File customerFile = new File("src/customers.txt");
+        Scanner fileScanner = new Scanner(customerFile);
+        boolean isValid = true;
+        do {
+            fileScanner.nextLine();    // skip the first line
+            while (fileScanner.hasNext()){
+                String line = fileScanner.nextLine();
+                String[] splitLine = line.split(",");
+                String testNum = splitLine[0].substring(1,5);
+                if (pickRandom == Integer.parseInt(testNum)){
+                    isValid = false;
+                    pickRandom = (int) (Math.random()*9000)+1000;
+                } else isValid = true;  // turn back to true if the number is unique
+            }} while (!isValid);
+
+        this.customerID = "C" + pickRandom;
         this.fullName = fullName;
         this.phoneNumber = phoneNumber;
         this.email = email;

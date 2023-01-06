@@ -1,1 +1,1 @@
-customerID,username,password,full name,phone number,email,address
+CustomerID,Username,Password,Full name,Phone number,Email,Address
