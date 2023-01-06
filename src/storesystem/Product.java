@@ -16,10 +16,19 @@ package storesystem;
 public class Product {
     private String productID;
     private String productTitle;
+
+    public String getProductPrice() {
+        return productPrice;
+    }
+
+    public void setProductPrice(String productPrice) {
+        this.productPrice = productPrice;
+    }
+
     private String productPrice;
     private String productCategory;
 
-    public Product (String productID, String productTitle, String productPrice, String productCategory) {
+    public Product (String username, String password, String productID, String productTitle) {
         this.productID = productID;
         this.productTitle = productTitle;
         this.productPrice = productPrice;
