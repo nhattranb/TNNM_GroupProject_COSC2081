@@ -4,9 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="3e1174cf-2abd-44d5-886e-f218a59435f7" name="Changes" comment="Update registration and login for Customer.java, other functions are still in process.">
+    <list default="true" id="3e1174cf-2abd-44d5-886e-f218a59435f7" name="Changes" comment="file admin (1)">
+      <change afterPath="$PROJECT_DIR$/src/storesystem/admin.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/storesystem/Customer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/storesystem/Customer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/storesystem/Admin.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/storesystem/Admin.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/storesystem/Product.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/storesystem/Product.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/storesystem/product.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/storesystem/items.txt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -27,7 +30,9 @@
     <option name="stateVersion" value="1" />
   </component>
   <component name="ProjectId" id="2JJasqfwh7R6etftrJvTTNDTt4X" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <OptionsSetting value="false" id="Update" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
@@ -87,6 +92,7 @@
       <workItem from="1672836307328" duration="1591000" />
       <workItem from="1672894653780" duration="1228000" />
       <workItem from="1672979952091" duration="433000" />
+      <workItem from="1672981563100" duration="1746000" />
     </task>
     <task id="LOCAL-00001" summary="The first code commit for the project">
       <created>1671799844112</created>
@@ -130,7 +136,14 @@
       <option name="project" value="LOCAL" />
       <updated>1672391123052</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="file admin (1)">
+      <created>1672982598971</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1672982598972</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -154,6 +167,7 @@
     <MESSAGE value="Project skeleton update" />
     <MESSAGE value="quick changes" />
     <MESSAGE value="Update registration and login for Customer.java, other functions are still in process." />
-    <option name="LAST_COMMIT_MESSAGE" value="Update registration and login for Customer.java, other functions are still in process." />
+    <MESSAGE value="file admin (1)" />
+    <option name="LAST_COMMIT_MESSAGE" value="file admin (1)" />
   </component>
 </project>

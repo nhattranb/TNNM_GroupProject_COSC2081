@@ -27,7 +27,7 @@ public class Product {
     private String currency = "VND";
 
     public Product(String productName, double productPrice, String productCategory) throws IOException {
-        try (Scanner fileScanner = new Scanner(new File("src/storesystem/product.txt"))) {
+        try (Scanner fileScanner = new Scanner(new File("src/storesystem/items.txt"))) {
             while (fileScanner.hasNext()) {
                 String line = fileScanner.next(); // get the line int the text file
                 while (!fileScanner.hasNext()) {
