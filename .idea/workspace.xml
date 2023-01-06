@@ -6,7 +6,7 @@
   <component name="ChangeListManager">
     <list default="true" id="3e1174cf-2abd-44d5-886e-f218a59435f7" name="Changes" comment="Update registration and login for Customer.java, other functions are still in process.">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/storesystem/Customer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/storesystem/Customer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/storesystem/Admin.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/storesystem/Admin.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -87,6 +87,7 @@
       <workItem from="1672836307328" duration="1591000" />
       <workItem from="1672894653780" duration="1228000" />
       <workItem from="1672979952091" duration="433000" />
+      <workItem from="1672981563100" duration="905000" />
     </task>
     <task id="LOCAL-00001" summary="The first code commit for the project">
       <created>1671799844112</created>
