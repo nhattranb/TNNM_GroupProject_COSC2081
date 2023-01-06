@@ -13,6 +13,7 @@
 
 package storesystem;
 import java.io.*;
+import java.text.DecimalFormat;
 import java.util.Scanner;
 public class Customer {
     private String username;
@@ -29,23 +30,26 @@ public class Customer {
     public Customer(String username, String password, String fullName, String phoneNumber,
                     String email, String address) throws IOException {
         // generate a unique random ID for each customer
-        int pickRandom = (int) (Math.random()*9000)+1000;
+        int idNum = 0;
         File customerFile = new File("src/customers.txt");
         Scanner fileScanner = new Scanner(customerFile);
-        boolean isValid = true;
-        do {
-            fileScanner.nextLine();    // skip the first line
+
+        fileScanner.nextLine();    // skip the first line
+        if (!fileScanner.hasNext()){
+            idNum = 1;
+        } else {
             while (fileScanner.hasNext()){
                 String line = fileScanner.nextLine();
-                String[] splitLine = line.split(",");
-                String testNum = splitLine[0].substring(1,5);
-                if (pickRandom == Integer.parseInt(testNum)){
-                    isValid = false;
-                    pickRandom = (int) (Math.random()*9000)+1000;
-                } else isValid = true;  // turn back to true if the number is unique
-            }} while (!isValid);
-
-        this.customerID = "C" + pickRandom;
+                if (!fileScanner.hasNext()){
+                    String[] splitLine = line.split(",");
+                    String[] testNum = splitLine[0].split("(?<=\\D)(?=\\d)");
+                    int numPart = Integer.parseInt(testNum[1]);
+                    idNum = ++numPart;
+                    break;
+                }
+            }
+        }
+        this.customerID = new DecimalFormat("C0000").format(idNum);
         this.fullName = fullName;
         this.phoneNumber = phoneNumber;
         this.email = email;
