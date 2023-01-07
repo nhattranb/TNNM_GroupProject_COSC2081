@@ -31,7 +31,7 @@ public class Customer {
                     String email, String address) throws IOException {
         // generate a unique random ID for each customer
         int idNum = 0;
-        File customerFile = new File("src/customers.txt");
+        File customerFile = new File("src/storesystem/customers.txt");
         Scanner fileScanner = new Scanner(customerFile);
 
         fileScanner.nextLine();    // skip the first line
@@ -74,7 +74,7 @@ public class Customer {
 
         Scanner sc = new Scanner(System.in);
         String line;   // to contain each line
-        try (Scanner fileScanner = new Scanner(new File("src/customers.txt"))) {
+        try (Scanner fileScanner = new Scanner(new File("src/storesystem/customers.txt"))) {
             while (fileScanner.hasNext()){
                 line = fileScanner.nextLine();  // assign the next line as a string in 'line'
                 String[] values = line.split(",");   // store split values inside an array
@@ -88,7 +88,7 @@ public class Customer {
         this.username = username;
         this.password = password;
         // write into the file
-        PrintWriter pw = new PrintWriter(new FileWriter("src/customers.txt", true));
+        PrintWriter pw = new PrintWriter(new FileWriter("src/storesystem/customers.txt", true));
         pw.printf("%s,%s,%s,%s,%s,%s,%s\n",this.customerID,this.username,this.password,fullName,phoneNumber,email,address);
         pw.flush();
         pw.close();
@@ -203,13 +203,35 @@ public class Customer {
         }
     }
 
+    public static void listAllProduct() throws IOException{
+        try (Scanner fileScanner = new Scanner(new File("src/storesystem/product.txt"))) {
+            while (fileScanner.hasNext()) {
+                String line = fileScanner.nextLine();
+                if (line.startsWith("PRO")) {
+                    String[] values = line.split(",");
+                    System.out.println(values[1]);
+                }
+            }
+            fileScanner.close();
+        } catch (Exception E) {}
+    }
 
+    public static void viewProductDetail(String productName) throws IOException{
+        try (Scanner fileScanner = new Scanner(new File("src/storesystem/product.txt"))) {
+            while (fileScanner.hasNext()) {
+                String line = fileScanner.nextLine();
+                String[] values = line.split(",");
+                if (productName.equalsIgnoreCase(values[1])) {
+                    System.out.println("Product: " + values[1]);
+                    System.out.println("ID: " + values[0]);
+                    System.out.println("Price: " + values[3]);
+                } else if (!fileScanner.hasNext()) {
+                    System.out.println("No product available!");
+                }
+            } fileScanner.close();
+        } catch (Exception e) {}
+    }
 
-    // public int getAllOrder() {}
-
-    // public checkMembership (String customerID) {}
-
-    // public allProduct() {}
 
     @Override
     public String toString() {
